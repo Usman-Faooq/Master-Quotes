@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/drawable/bg_gardient_1.xml" value="0.2203125" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/drawable/fullscreen_gardient_bg.xml" value="0.2203125" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/drawable/icon_angle_right.xml" value="0.2203125" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/drawable/icon_back.xml" value="0.2203125" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/drawable/icon_bookmark.xml" value="0.2203125" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/drawable/icon_bookmark_filled.xml" value="0.2203125" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/drawable/icon_heart.xml" value="0.2203125" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout-v26/cardview_fullscreen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/activity_app_setting.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/activity_bookmark.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/activity_favourites.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/activity_full_screen_book_mark.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/activity_full_screen_quote.xml" value="0.16" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/activity_quotes_category.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/cardview_category.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/cardview_fullscreen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/cardview_quotes.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/cardview_selectingcard.xml" value="0.25" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/layout/cardview_shimmerloading.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android Official Projects/MasterQuotes/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable-v24/icon_arrow_right.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable-v24/icon_download.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable-v24/icon_hone.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/icon_arrow_right.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/icon_copy_text.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/icon_download.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/icon_heart.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/icon_heart_filled.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/icon_home.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/icon_search.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/icon_share.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/drawable/splash_screen.xml" value="0.2203125" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/layout/activity_app_setting.xml" value="0.20416666666666666" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/layout/activity_downloaded_items.xml" value="0.19010416666666666" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/layout/cardview_category.xml" value="0.20416666666666666" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/layout/cardview_quotes.xml" value="0.2" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/layout/navigation_header.xml" value="0.20416666666666666" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/MasterQuotes/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

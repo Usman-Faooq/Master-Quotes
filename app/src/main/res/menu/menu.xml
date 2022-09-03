@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/icon_home"
+        android:id="@+id/home"/>
+
+    <item
+        android:title="BookMarks"
+        android:icon="@drawable/icon_bookmark"
+        android:id="@+id/fav_act"/>
+
+
+    <item
+        android:title="Settings"
+        android:icon="@drawable/icon_setting"
+        android:id="@+id/accountsetting"/>
+
+
+    <item android:title="More">
+        <menu>
+
+            <item
+                android:id="@+id/share_tab"
+                android:title="Share App"
+                android:icon="@drawable/icon_share"/>
+
+            <item
+                android:id="@+id/rate_tab"
+                android:title="Rate This App"
+                android:icon="@drawable/icon_rating"/>
+
+            <item
+                android:id="@+id/about_tab"
+                android:title="About"
+                android:icon="@drawable/icon_about"/>
+
+            <item
+                android:id="@+id/privacy_tab"
+                android:title="Privacy and Policy"
+                android:icon="@drawable/icon_privacy"/>
+
+        </menu>
+    </item>
+
+</menu>

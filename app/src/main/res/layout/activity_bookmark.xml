@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookMarkActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bookmarkToolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        app:title="BookMarks"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/quoteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookmarkToolbar"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="2sp"
+        android:layout_marginBottom="2sp"
+        android:fontFamily="sans-serif-black"
+        android:text="Quotes"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/empty_bookmark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/quoteText"
+        android:src="@drawable/no_data_found"
+        android:visibility="invisible"/>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/bookmark_shimmer_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_duration="1000"
+        android:layout_below="@+id/quoteText"
+        android:paddingLeft="8sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/cardview_shimmerloading"/>
+            <include layout="@layout/cardview_shimmerloading"/>
+            <include layout="@layout/cardview_shimmerloading"/>
+            <include layout="@layout/cardview_shimmerloading"/>
+            <include layout="@layout/cardview_shimmerloading"/>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookmarkRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/quoteText"/>
+</RelativeLayout>

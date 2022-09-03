@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainActivityToolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            app:title="@string/app_name"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/quoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainActivityToolbar"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2sp"
+            android:fontFamily="sans-serif-black"
+            android:text="Quotes"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/main_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_data_found"
+            android:visibility="invisible"
+            android:layout_below="@id/mainActivityToolbar"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/mainfrag_shimmer_loading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_duration="1000"
+            android:layout_below="@+id/quoteText"
+            android:paddingLeft="8sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/cardview_shimmerloading"/>
+                <include layout="@layout/cardview_shimmerloading"/>
+                <include layout="@layout/cardview_shimmerloading"/>
+                <include layout="@layout/cardview_shimmerloading"/>
+                <include layout="@layout/cardview_shimmerloading"/>
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/quotesMainRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/quoteText"/>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/menu"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

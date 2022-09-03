@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5sp"
+    android:id="@+id/cardshape"
+    android:layout_marginBottom="60sp"
+    android:layout_marginRight="40sp"
+    android:layout_marginLeft="40sp"
+    android:layout_marginTop="50sp"
+    app:cardBackgroundColor="@color/purple_700"
+    android:elevation="10sp"
+    app:cardCornerRadius="15sp">
+
+    <RelativeLayout
+        android:id="@+id/fullscreen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fullscreen_Copybtn"
+            android:layout_width="20dp"
+            android:layout_height="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:src="@drawable/icon_copy_text"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/fullscreen_quotes_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fullscreen_authorname"
+            android:layout_below="@id/fullscreen_Copybtn"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center"
+            android:hint="Quotes Place"
+            android:justificationMode="inter_word"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/fullscreen_authorname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fullscreen_btnlayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"
+            android:alpha="0.6"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="right"
+            android:hint="Author Name"
+            android:justificationMode="inter_word"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/fullscreen_btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15sp"
+            android:background="#54000000">
+
+            <ImageView
+                android:id="@+id/fullscreen_bookmarkbtn"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="10sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:src="@drawable/icon_bookmark" />
+
+            <ImageView
+                android:id="@+id/fullscreen_share_btn"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_toLeftOf="@+id/fullscreen_download_btn"
+                android:padding="10sp"
+                android:src="@drawable/icon_share"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/fullscreen_download_btn"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7sp"
+                android:padding="10sp"
+                android:src="@drawable/icon_download"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fullscreen_logotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullscreen_authorname"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="5sp"
+            android:fontFamily="cursive"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
